@@ -1,72 +1,487 @@
-Question 1 [TF] with 2 marks - Question 1: Explain the difference between a parameter and a statistic.\
-\
-\
-\
-Question 2 [TF] with 2 marks - Question 2: Discuss the importance of sample size in statistical studies.\
-\
-\
-\
-Question 3 [TF] with 2 marks - Question 3: Define the term "confidence interval" and explain its significance.\
-\
-\
-\
-Question 4 [TF] with 2 marks - Question 4: What is the Central Limit Theorem? Provide an example.\
-\
-\
-\
-Question 5 [TA] - Question 5: A researcher wants to test the effectiveness of a new drug. Describe the steps involved in conducting a clinical trial.\
-\
-\
-\
-Question 6 [TA] with 2 marks - Question 6: Compare and contrast qualitative and quantitative research methods.\
-\
-\
-\
-Question 7 [TA] with 1 mark - Question 7: What is the purpose of a literature review in research?\
-\
-\
-\
-Question 8 [TA] with 1 mark - Question 8: Explain the role of a hypothesis in research.\
-\
-\
-\
-Question 9 [TF] with 3 marks - Question 1: What is the difference between Type I and Type II errors?\
-\
-\
-\
-Question 10 [TF] with 3 marks - Question 2: Explain the concept of p-value in hypothesis testing.\
-\
-\
-\
-Question 11 [TA] with 2 marks - Question 3: Describe the various scales of measurement in statistics.\
-\
-\
-\
-Question 12 [TA] with 1 mark - Question 4: What is the significance of the normal distribution in statistics?\
-\
-\
-\
-Question 13 [TF] with 3 marks - part (c): The graph of f : [0, π/2] → R, f(x) = √sin(2x) is shown below. On the same set of axes, sketch the graph of the derivative function f'. Label any asymptotes with their equations and any intercepts with their coordinates. You do not need to label any point of intersection.\
-\
-\
-\
-Question 14 [TF] with 3 marks - part (e): The function g(x) = a√(b-(x-c)²) has the same domain and range as f. Find the values of a, b and c.\
-\
-\
-\
-Question 15 [TA] - Question 2: Let g : [150,210] → R, g(x) = (π/120)sin((π/60)(x-30)). In a farm, the masses of apples in grams are represented by a random variable X with the probability density function f(x) = {g(x) for 150 ≤ x ≤ 210, 0 elsewhere}. Part (i): If Pr(b-c < X < b+c) = 0.9, where b-c ≥ 150 and b+c ≤ 210, find the possible values of b, correct to one decimal place.\
-\
-\
-\
-Question 16 [TA] with 2 marks - Question 4: In a cattle ranch, an agriculturist monitors two identical cows, A and B, over 20 months to study the effects of food deprivation. Cow A receives a normal diet throughout, while Cow B is placed on a restricted diet for the first 10 months and then resumes a normal diet. The weight gains of the cows over time are plotted below. Both cows have gained 400 kg after 20 months. Cow A's weight gain, A(t) in kg after t months is modelled by A : [0,20] → R, A(t) = p - p/(t+q) where p and q are positive constants. Cow B's weight gain, B(t) in kg after t months is modelled by B(t) = {B₁(t) for 0 ≤ t ≤ 10, B₂(t) for 10 < t ≤ 20} where B₁(t) and B₂(t) are linear transformations of the graph of A(t). The graphs of B₁(t) and B₂(t) are joined at the point (10,200). Part (a): Describe a sequence of transformations that maps the graph of A(t) to the graph of B₂(t).\
-\
-\
-\
-Question 17 [TA] with 1 mark - Question 7: A fair six-sided die is rolled until a '6' appears, and the number of rolls is noted. The probability that a '6' appears in at most n rolls is: A. (5/6)ⁿ, B. 1-(5/6)ⁿ, C. (1/6)(5/6)ⁿ, D. 1-(1/6)(5/6)ⁿ\
-\
-\
-\
-Question 18 [TA] with 1 mark - Question 12: A pharmaceutical company is running two independent clinical trials – one in Sydney and another in Melbourne. Let S be the event that the Sydney trial is successful and M be the event that the Melbourne trial is successful. Suppose that P(S) = 0.7 and P(M) = 0.6. Given that at least one of the two trials is successful, what is the probability that only the Melbourne trial is successful, correct to four decimal places? A. 0.1080, B. 0.2045, C. 0.3061, D. 0.4286\
-\
-\
-\
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+
+\title{Methods Questions}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Question 1 [TF]}
+
+\textbf{Question 8} \hfill 7 marks
+
+A random variable $X$ has a probability density function given by
+
+\[
+f(x) = \begin{cases}
+k\cos^2(x) + k & 0 \leq x \leq \frac{\pi}{2} \\
+0 & \text{elsewhere}
+\end{cases}
+\]
+
+where $k \geq 0$.
+
+\textbf{(a)} Show that $\frac{d}{dx}(x + \sin(x)\cos(x)) = 2\cos^2(x)$.
+
+\vspace{5\baselineskip}
+
+\textbf{(b)} Hence, find the value of $k$. Express your answer in the form $\frac{a-\pi}{b\pi}$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 2 [TF]}
+
+\textbf{Question 8(d)} \hfill 7 marks
+
+Another random variable $Y$ has probability density function given by
+
+\[
+g(x) = \begin{cases}
+a\cos^2(x) + c & 0 \leq x \leq \frac{\pi}{2} \\
+0 & \text{elsewhere}
+\end{cases}
+\]
+
+where $a \geq 0$.
+
+Find the maximum value of $a$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 3 [TA]}
+
+\textbf{Question 19} \hfill 1 mark
+
+If $\cos(a) = b$, where $b < 0$ and $\frac{\pi}{2} < a < \pi$, then the sum of the solutions to $\cos(3x) = b$, where $0 < x < \pi$, is
+
+\begin{enumerate}
+    \item[A.] $a$
+    \item[B.] $\frac{3a + 2\pi}{3}$
+    \item[C.] $a + 2\pi$
+    \item[D.] $\frac{2(a + \pi)}{3}$
+\end{enumerate}
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 4 [TA]}
+
+\textbf{Question 2} \hfill 12 marks
+
+The strength of a signal is modelled by $f(t) = 5 - 3\sin\left(\frac{\pi t}{8}\right)$ where time $t$ is in seconds and $t \geq 0$.
+
+\textbf{(g)} For two distinct times $t_1, t_2 \in (0, 16)$, an observer notes that $f'(t_1) = -f'(t_2)$. $t_2$ can be expressed as
+
+\[
+t_2 = \begin{cases}
+c_1 - t_1 & 0 < t_1 < 8 \text{ and } 0 < t_2 < 8 \\
+c_2 - t_1 & 8 < t_1 < 16 \text{ and } 8 < t_2 < 16
+\end{cases}
+\]
+
+Find the values of $c_1$ and $c_2$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 5 [TA]}
+
+\textbf{Question 4} \hfill 14 marks
+
+The durations (in seconds) for which ads are viewed on a YouTube channel follow the probability density function:
+
+\[
+f(x) = \begin{cases}
+\frac{16}{15(x-5)^2} & 6 \leq x \leq 21 \\
+0 & \text{elsewhere}
+\end{cases}
+\]
+
+\textbf{(a)} Find the probability that an ad is viewed for more than 10 seconds.
+
+\vspace{5\baselineskip}
+
+\textbf{(c)} Another probability distribution function is given by
+
+\[
+g(x) = \begin{cases}
+af(x) - b & 6 \leq x \leq 21 \\
+0 & \text{elsewhere}
+\end{cases}
+\]
+
+where $a, b > 0$. Find the maximum value of $b$ and the corresponding value of $a$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 6 [TA]}
+
+\textbf{Question 5}
+
+Let $g : (-3,\infty) \to \mathbb{R}$, $g(x) = -\log_e(2x + 6)$.
+
+$h : [0,\infty) \to \mathbb{R}$, $h(x) = a\cos(x)$, where $a \neq 0$.
+
+\textbf{(e)} Find the values of $a$ for which the graphs of $h$ and $g$ do not intersect. Give any non-exact values correct to two decimal places.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 7 [TA]}
+
+\textbf{Question 10}
+
+A 99\% confidence interval for a population proportion is equal to $(a,b)$, then a 95\% confidence interval for the population proportion is closest to
+
+\begin{enumerate}
+    \item[A.] $(0.88a + 0.12b, 0.12a + 0.88b)$
+    \item[B.] $(0.88a - 0.12b, 0.12a + 0.88b)$
+    \item[C.] $(1.31a, 1.31b)$
+    \item[D.] $(0.76a, 0.76b)$
+\end{enumerate}
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 8 [TA]}
+
+\textbf{Question 17}
+
+Several students were considering the following simultaneous equations
+
+\begin{align*}
+3x - 2y + z &= 1\\
+-x + y - z &= 2
+\end{align*}
+
+Allan stated that the general solution could be expressed as
+\[
+x = k, \quad y = 2k - 3, \quad z = k - 5 \quad \text{for } k \in R.
+\]
+
+Ben stated that the general solution could be expressed as
+\[
+x = \frac{k+3}{2}, \quad y = k, \quad z = \frac{k-7}{2} \quad \text{for } k \in R.
+\]
+
+Colin stated that the general solution could be expressed as
+\[
+x = k + 5, \quad y = 2k + 7, \quad z = k \quad \text{for } k \in R.
+\]
+
+Then
+
+\begin{enumerate}
+    \item[A.] Only Allan is correct.
+    \item[B.] Only Ben is correct
+    \item[C.] Only Colin is correct
+    \item[D.] All of Allan, Ben and Colin are correct.
+\end{enumerate}
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 9 [TA]}
+
+\textbf{Question 18}
+
+Newton's method is used to solve the equation $f(x) = 0$.
+
+Newton's method can sometimes fail to find the root of the equation $f(x) = 0$.
+
+All of the functions below have a root close to $x = 1$, with a starting value of $x_0 = 2$. Newton's method will succeed for which one of the following functions?
+
+\begin{enumerate}
+    \item[A.] $f(x) = \sqrt{3x^2 - 7x + 2}$
+    \item[B.] $f(x) = 3x^3 - 13x^2 + 16x - 4$
+    \item[C.] $f(x) = (3x - 1)\log_e(x - 2)$
+    \item[D.] $f(x) = (3x - 1)e^{x-2}$
+\end{enumerate}
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 10 [TF]}
+
+\textbf{Question 3} \hfill 3 marks
+
+Find the values of $a$ and $b$ for which the simultaneous linear equations,
+
+\begin{align*}
+2ax - 2by &= 5\\
+(1-3b)x + 12y &= 2 - 4b
+\end{align*}
+
+have an infinite number of solutions.
+
+\vspace{5\baselineskip}
+
+\section*{Question 11 [TF]}
+
+\textbf{Question b} \hfill 3 marks
+
+Consider the functions $f : [0,2\pi] \to R$, $f(x) = 2\sin^2(2x)$ and $g : [0,2\pi] \to R$, $g(x) = 1 - \cos(2x)$, on the axes below, sketch the graphs of the functions $y = f(x)$ and $y = g(x)$ and determine $2\sin^2(2x) < 1 - \cos(2x)$ for $x \in [0,2\pi]$
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 12 [TF]}
+
+\textbf{Question 2} \hfill 6 marks
+
+Consider line $l_1$ with equation $y = 2x - 3$ and line $l_2$ that is perpendicular to $l_1$ and passes through its $y$-intercept.
+
+\textbf{(a)} Show that the equation of $l_2$ is $y = -\frac{1}{2}x - 3$.
+
+\textbf{(b)} Another line $l_3$ has the equation $y = mx + c$, where $m,c \in \mathbb{R}$.
+
+\textbf{i.} If the simultaneous equations $l_1$, $l_2$ and $l_3$ have a unique solution, find the possible values of $m$ and $c$.
+
+\textbf{ii.} Find the positive value of $m$ for which $l_3$ passes through the point $(3,3)$ and encloses an isosceles triangle with $l_1$ and $l_2$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 13 [TF]}
+
+\textbf{Part (c)} \hfill 3 marks
+
+The graph of $f : \left[0, \frac{\pi}{2}\right] \to \mathbb{R}$, $f(x) = \sqrt{\sin(2x)}$ is shown below.
+
+On the same set of axes, sketch the graph of the derivative function $f'$. Label any asymptotes with their equations and any intercepts with their coordinates. You do not need to label any point of intersection.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 14 [TF]}
+
+\textbf{Part (e)} \hfill 3 marks
+
+The function $g(x) = a\sqrt{b - (x - c)^2}$ has the same domain and range as $f$. Find the values of $a$, $b$ and $c$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 15 [TA]}
+
+\textbf{Question 2}
+
+Let $g : [150,210] \to \mathbb{R}$, $g(x) = \frac{\pi}{120}\sin\left(\frac{\pi}{60}(x - 30)\right)$.
+
+In a farm, the masses of apples in grams are represented by a random variable $X$ with the probability density function
+
+\[
+f(x) = \begin{cases}
+g(x) & 150 \leq x \leq 210\\
+0 & \text{elsewhere}
+\end{cases}
+\]
+
+\textbf{(i)} If $\text{Pr}(b - c < X < b + c) = 0.9$, where $b - c \geq 150$ and $b + c \leq 210$, find the possible values of $b$, correct to one decimal place.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 16 [TA]}
+
+\textbf{Question 4} \hfill 2 marks
+
+In a cattle ranch, an agriculturist monitors two identical cows, A and B, over 20 months to study the effects of food deprivation. Cow A receives a normal diet throughout, while Cow B is placed on a restricted diet for the first 10 months and then resumes a normal diet. The weight gains of the cows over time are plotted below. Both cows have gained 400 kg after 20 months.
+
+Cow A's weight gain, $A(t)$ in kg after $t$ months is modelled by
+
+\[
+A : [0,20] \to \mathbb{R}, \quad A(t) = p - \frac{p}{t + q}
+\]
+
+where $p$ and $q$ are positive constants.
+
+Cow B's weight gain, $B(t)$ in kg after $t$ months is modelled by
+
+\[
+B(t) = \begin{cases}
+B_1(t) & 0 \leq t \leq 10\\
+B_2(t) & 10 < t \leq 20
+\end{cases}
+\]
+
+where $B_1(t)$ and $B_2(t)$ are linear transformations of the graph of $A(t)$. The graphs of $B_1(t)$ and $B_2(t)$ are joined at the point $(10,200)$.
+
+\textbf{(a)} Describe a sequence of transformations that maps the graph of $A(t)$ to the graph of $B_2(t)$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 17 [TA]}
+
+\textbf{Question 7} \hfill 1 mark
+
+A fair six-sided die is rolled until a '6' appears, and the number of rolls is noted. The probability that a '6' appears in at most $n$ rolls is
+
+\begin{enumerate}
+    \item[A.] $\left(\frac{5}{6}\right)^n$
+    \item[B.] $1 - \left(\frac{5}{6}\right)^n$
+    \item[C.] $\frac{1}{6}\left(\frac{5}{6}\right)^n$
+    \item[D.] $1 - \frac{1}{6}\left(\frac{5}{6}\right)^n$
+\end{enumerate}
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 18 [TA]}
+
+\textbf{Question 12} \hfill 1 mark
+
+A pharmaceutical company is running two independent clinical trials -- one in Sydney and another in Melbourne. Let $S$ be the event that the Sydney trial is successful and $M$ be the event that the Melbourne trial is successful. Suppose that $P(S) = 0.7$ and $P(M) = 0.6$.
+
+Given that at least one of the two trials is successful, what is the probability that only the Melbourne trial is successful, correct to four decimal places?
+
+\begin{enumerate}
+    \item[A.] 0.1080
+    \item[B.] 0.2045
+    \item[C.] 0.3061
+    \item[D.] 0.4286
+\end{enumerate}
+
+\vspace{5\baselineskip}
+
+\section*{Question 19 [TF]}
+
+\textbf{Question 8}
+
+\textbf{(a)} Consider the functions $f_1(x) = 2\sin^2(x)$ and $f_2(x) = \cos^2(x)$, where $x \in \mathbb{R}$.
+
+\textbf{i.} State the range of $f_1$.
+
+\vspace{5\baselineskip}
+
+If the $x$-coordinates of the points of intersection of $y = f_1(x)$ and $y = f_2(x)$ satisfy the equation $\tan(x) = k$, find all possible values of $k$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 20 [TF]}
+
+\textbf{Question 8}
+
+\textbf{ii.} Consider the function $g^* : [0,k] \to \mathbb{R}$, $g^*(x) = \sin(2x^2)$, where $k > 0$. Find all values of $k$ for which the range of $g^*$ is $[-1,1]$.
+
+\vspace{5\baselineskip}
+
+\hrulefill
+
+\section*{Question 21 [TA]}
+
+\textbf{Question 8}
+
+\textbf{(d)} Let $W$ be a random variable representing the density (in tonnes per cubic metre) of concrete cylinders manufactured by a construction company. Suppose its probability density function can be modelled as
+
+\[
+w(x) = \begin{cases}
+-kx^2 + \left(\frac{38k + 6}{15}\right)x & 2 \leq x \leq 3\\
+0 & \text{elsewhere}
+\end{cases}
+\]
+
+If $\text{Pr}(W > 2.5) = 0.40$, find the values $k$ can take.
+
+\vspace{5\baselineskip}
+
+\section*{Question 22 [TA]}
+
+\textbf{Question 2} \hfill 1 mark
+
+If $h'(x) = e^{-\frac{1}{4}}$ and $h(1) = 4$, the value of $h(2)$ is closest to
+
+\begin{enumerate}
+    \item[A.] 4.6533
+    \item[B.] 4.5048
+    \item[C.] 6.0201
+    \item[D.] 3.9224
+\end{enumerate}
+
+\vspace{5\baselineskip}
+
+\section*{Question 23 [TF]}
+
+\textbf{Part (d)} \hfill 3 marks
+
+Find the real value(s) of $k$ for which the graph of $y = \tan(kx) - 1$ has exactly three $x$-intercepts in $x \in \left[0, \frac{5\pi}{4}\right]$.
+
+\vspace{5\baselineskip}
+
+\section*{Question 24 [TA]}
+
+\textbf{Question 3} \hfill 17 marks
+
+An athlete training for a triathlon is located at point $O(0,0)$ on the shore of a circular lake of diameter 4 kilometres. To reach the opposite point $Q(4,0)$, the athlete runs around the shore clockwise to point $P$ at a speed of 12 km/h, then swims the remaining distance, if any, to point Q at 6 km/h. Let $\theta = \angle OCP$, where $C$ is the centre of the circle.
+
+\textbf{(a)} Express the coordinates of $P$ in terms of $\theta$.
+
+\textit{Solution: The centre is at $C(2,0)$. The coordinates of $P$ are $(2 - 2\cos(\theta), 2\sin(\theta))$.
+}
+
+\vspace{5\baselineskip}
+
+Let $\theta = \frac{\pi}{2}$. The displacement of the athlete, $s(t)$ kilometres (distance relative to the starting point O) after $t$ hours can be expressed as
+
+\[
+s(t) = \begin{cases}
+s_1(t) & 0 \leq t \leq t_P\\
+s_2(t - t_P) & t_P < t \leq t_Q
+\end{cases}
+\]
+
+where $t_P$ and $t_Q$ are the times taken to reach points $P$ and $Q$, respectively.
+
+\textbf{(e)} Find the rule of $s_1(t)$ in the form $\sqrt{k - m\cos(nx)}$, where $k, m, n \in \mathbb{Z}^+$.
+
+\textbf{(f)} Find the rule of $s_2(t - t_P)$. Is the rate of change of the displacement constant for $t_P < t \leq t_Q$?
+
+\textbf{(h)} The probability distribution for the swimming speed of female athletes ranges from 6 km/h to 8.5 km/h and can be obtained from a sequence of transformations on the graph of $f(x)$.
+
+Describe a sequence of two dilations and one translation to achieve the above transformation.
+
+The swimming speed, $X$ km/h, of male athletes in the triathlon follows the probability distribution
+
+\[
+f(x) = \begin{cases}
+\frac{a}{2}\sin(a(x - b)) & 5 \leq x \leq 9\\
+0 & \text{elsewhere}
+\end{cases}
+\]
+
+where $a, b \in \mathbb{R}^+$. The graph of $f(x)$ has $x$-intercepts at $x = 5$ and $x = 9$.
+
+\textbf{(g)} Find the smallest possible values of $a$ and $b$.
+
+\vspace{5\baselineskip}
+
+\end{document}

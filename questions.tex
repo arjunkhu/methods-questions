@@ -1226,5 +1226,191 @@ Newton's method, with an initial estimate $x_0$, will fail when finding the root
 
 \vspace{9\baselineskip}
 
+\hrulefill
+
+\section*{Question 48 [TA]}
+
+\textbf{Question 2} \hfill 15 marks
+
+A tidal river, at a particular station, Station A, has its height above ground level modelled by the function
+\[
+h_A(t) = a\sin(b(t-18)) + c
+\]
+for some $a, b, c \in \mathbb{R}^+$, with height, $h_A$, in metres $t$ hours after 9 am on a particular day.
+
+On this day the river had a maximum height of 50 metres and minimum height of 10 metres.
+
+\textbf{a.} Explain why $a = 20$ and $c = 30$. \hfill 1 mark
+
+\vspace{9\baselineskip}
+
+One complete cycle of the height, $h$, of the tidal river is completed in 18 hours.
+
+\textbf{b.} Show that $b = \frac{\pi}{9}$. \hfill 1 mark
+
+\vspace{9\baselineskip}
+
+After 27 hours the tidal height at \textbf{Station A} changes, and from 9 am is modelled by the piecewise function $w$, defined by
+\[
+w(t) = \begin{cases}
+h_A(t) & 0 \leq t \leq 27 \\
+30 & 27 < t \leq 40
+\end{cases}
+\]
+
+After 40 hours the tidal height changes again and the height, $p$ metres, at time $t$ hours after 9 am on a Sunday of a certain week can be modelled by the function
+\[
+p(t) = \begin{cases}
+w(t) & 0 \leq t \leq 40 \\
+m\cos(n(t-r)) + s & 40 < t \leq k
+\end{cases}
+\]
+where $m$, $n$, $r$, $s$ and $k$ are real constants.
+
+Recording capacities for this river break down at 9 pm on Tuesday of that particular week and no records of height are taken after this time.
+
+\textbf{h.} State the value of $k$. \hfill 1 mark
+
+\vspace{9\baselineskip}
+
+The graph of $p(t)$ is continuous and smooth at $t = 40$ with the section described by $p = m\cos(n(t-r)) + s$ completing two cycles before recording capacities break.
+
+Surprisingly for the recorders, the river over the domain $t \in [0,k]$ reaches zero height twice.
+
+\textbf{i.} State a possible set of values for $m$, $n$, and $s$ and give $r$ as a general solution for those values. \hfill 3 marks
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 49 [TF]}
+
+\textbf{Question 7} \hfill 4 marks
+
+Consider the function $f$ with rule $f(x) = x + \frac{1}{x-2}$. Part of the graph of $f$ is shown below.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ width=10cm,
+ height=8cm,
+ xlabel={$x$},
+ ylabel={$y$},
+ xmin=-2, xmax=6,
+ ymin=-6, ymax=6,
+ axis lines=middle,
+ samples=100,
+]
+
+% Plot f(x) = x + 1/(x-2)
+\addplot[thick, black, smooth, domain=-2:1.85] {x + 1/(x-2)};
+\addplot[thick, black, smooth, domain=2.15:6] {x + 1/(x-2)};
+
+% Vertical asymptote x = 2
+\addplot[dashed, gray] coordinates {(2,-6) (2,6)};
+
+% Mark origin
+\node at (axis cs:0,0) [below left] {$O$};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\textbf{ii.} Find the value of $a$, where $a \in R$, for which the graph of $y = 1 + f(a-x)$ has no $y$-intercepts. \hfill 1 mark
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 50 [TF]}
+
+\textbf{Question 9} \hfill 8 marks
+
+The diagram below shows a trapezium with vertices at $(0,0)$, $(0,2)$, $(3,2)$ and $(b,0)$, where $b$ is a real number and $0 < b < 2$.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ width=10cm,
+ height=6cm,
+ xlabel={$x$},
+ ylabel={$y$},
+ xmin=-0.5, xmax=4,
+ ymin=-0.5, ymax=2.5,
+ axis lines=middle,
+ samples=100,
+]
+
+% Trapezium
+\draw[thick] (axis cs:0,0) -- (axis cs:0,2) -- (axis cs:3,2) -- (axis cs:1.5,0) -- cycle;
+
+% Cubic curve
+\addplot[thick, black, smooth, domain=0:3] {x*(x-1.5)^2/2};
+\node at (axis cs:2,1) {$y = ax(x-b)^2$};
+
+% Label points
+\node at (axis cs:0,0) [below left] {$O$};
+\node at (axis cs:0,2) [left] {$2$};
+\node at (axis cs:3,2) [above] {$3$};
+\node at (axis cs:1.5,0) [below] {$b$};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+On the same axes as the trapezium, part of the graph of a cubic polynomial function is drawn. It has the rule $y = ax(x-b)^2$, where $a$ is a non-zero real number and $0 \leq x \leq b$.
+
+\textbf{a.} At the local maximum of the graph, $y = b$.
+
+Find $a$ in terms of $b$. \hfill 3 marks
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 51 [TF]}
+
+\textbf{Question 7} \hfill 9 marks
+
+Let $f : \left[0, \frac{\pi}{2}\right] \to R$, $f(x) = 4\cos(x)$ and $g : \left[0, \frac{\pi}{2}\right] \to R$, $g(x) = 3\sin(x)$.
+
+\textbf{b.} Let $c$ be such that $f(c) = g(c)$, where $c \in \left[0, \frac{\pi}{2}\right]$.
+
+Find the value of $\sin(c)$ and the value of $\cos(c)$.
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 52 [TA]}
+
+\textbf{Question 17}
+
+If $F(x)$ is an antiderivative of $f(x)$ and $F(4) = -6$, then $F(8)$ is equal to
+
+\begin{enumerate}
+    \item[A.] $f'(8) + 6$
+    \item[B.] $-6 + f'(4)$
+    \item[C.] $\int_4^8 f(x)\,dx$
+    \item[D.] $\int_4^8 (-6 + f(x))\,dx$
+    \item[E.] $-6 + \int_4^8 f(x)\,dx$
+\end{enumerate}
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 53 [TA]}
+
+\textbf{Part f} \hfill 2 marks
+
+A knob is attached to each controller. The height of a knob is normally distributed with a mean of 30 mm. If the knob on a controller has a height greater than 30.4 mm or less than 29.6 mm, then the controller is defective.
+
+Rebecca wants to ensure that less than 2\% of all controllers manufactured are defective.
+
+What is the maximum standard deviation of the height of a knob, in millimetres, that can be attached to a controller so that less than 2\% of controllers are defective? Give your answer correct to two decimal places.
+
+\vspace{9\baselineskip}
+
 \end{document}
 

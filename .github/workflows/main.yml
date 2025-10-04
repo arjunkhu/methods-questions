@@ -19,8 +19,8 @@ jobs:
         with:
           root_file: questions.tex
       
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+    - name: Upload PDF artifact
+  uses: actions/upload-artifact@v4
         with:
           name: questions-pdf
           path: questions.pdf

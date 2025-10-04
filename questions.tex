@@ -1412,5 +1412,101 @@ What is the maximum standard deviation of the height of a knob, in millimetres, 
 
 \vspace{9\baselineskip}
 
-\end{document}
+\hrulefill
 
+\section*{Question 54 [TF]}
+
+\textbf{Question 7} \hfill 8 marks
+
+The shaded region in the diagram below is bounded by the vertical axis, the graph of the function with rule $f(x) = \sin(\pi x)$ and the horizontal line segment that meets the graph at $x = a$, where $1 \leq a \leq \frac{3}{2}$.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ width=12cm,
+ height=8cm,
+ xlabel={$x$},
+ ylabel={$y$},
+ xmin=-0.2, xmax=2.5,
+ ymin=-1.5, ymax=1.5,
+ axis lines=middle,
+ samples=200,
+ xtick={0,0.5,1,1.5,2},
+ xticklabels={$0$,$\frac{1}{2}$,$1$,$\frac{3}{2}$,$2$},
+]
+
+% Plot y = sin(πx)
+\addplot[thick, black, smooth, domain=0:2.5] {sin(deg(pi*x))};
+\node at (axis cs:1.8,0.8) {$y = \sin(\pi x)$};
+
+% Shaded region (example with a = 1.2)
+\addplot[fill=gray!40, domain=0:1.2] {sin(deg(pi*x))} \closedcycle;
+\addplot[thick, gray, domain=0:1.5] coordinates {(1.2,{sin(deg(pi*1.2))}) (1.2,0)};
+\draw[thick] (axis cs:0,{sin(deg(pi*1.2))}) -- (axis cs:1.2,{sin(deg(pi*1.2))});
+
+% Mark point a
+\node[circle,fill,inner sep=1.5pt] at (axis cs:1.2,0) {};
+\node at (axis cs:1.2,0) [below] {$a$};
+
+% Mark origin
+\node at (axis cs:0,0) [below left] {$O$};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+Let $A(a)$ be the area of the shaded region.
+
+\textbf{a.} Show that $A(a) = \frac{1}{\pi} - \frac{1}{\pi}\cos(a\pi) - a\sin(a\pi)$. \hfill 3 marks
+
+\vspace{9\baselineskip}
+
+\textbf{c. i.} Express in terms of $A(a)$, for a specific value of $a$, the area bounded by the vertical axis, the graph of $y = 2\left(\sin(\pi x) + \frac{\sqrt{3}}{2}\right)$ and the horizontal axis. \hfill 2 marks
+
+\vspace{9\baselineskip}
+
+\textbf{ii.} Hence, or otherwise, find the area described in \textbf{part c.i.}
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 55 [TF]}
+
+\textbf{Question 8} \hfill 5 marks
+
+A fair standard die is rolled 50 times. Let $W$ be a random variable with binomial distribution that represents the number of times the face with a six on it appears uppermost.
+
+\textbf{a.} Write down the expression for $\Pr(W = k)$, where $k \in \{0, 1, 2, \ldots, 50\}$. \hfill 1 mark
+
+\vspace{9\baselineskip}
+
+\textbf{b.} Show that $\frac{\Pr(W = k+1)}{\Pr(W = k)} = \frac{(50-k)}{5(k+1)}$. \hfill 2 marks
+
+\vspace{9\baselineskip}
+
+\textbf{c.} Hence, or otherwise, find the value of $k$ for which $\Pr(W = k)$ is the greatest. \hfill 2 marks
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 56 [TA]}
+
+\textbf{Question 9}
+
+At the start of a particular week, Kim has three red apples and two green apples. She eats one apple every day. On Monday, Tuesday and Wednesday of that week, she randomly selects an apple to eat.
+
+In this three-day period, the probability that Kim does not eat an apple of the same colour on any two consecutive days is
+
+\begin{enumerate}
+    \item[A.] $\frac{1}{10}$
+    \item[B.] $\frac{1}{5}$
+    \item[C.] $\frac{3}{10}$
+    \item[D.] $\frac{2}{5}$
+    \item[E.] $\frac{6}{25}$
+\end{enumerate}
+
+\vspace{9\baselineskip}
+
+\end{document}

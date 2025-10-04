@@ -4,6 +4,9 @@
 \usepackage{amssymb}
 \usepackage[margin=1in]{geometry}
 \usepackage{setspace}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 \title{Methods Questions}
 \author{}
@@ -19,12 +22,11 @@
 
 A random variable $X$ has a probability density function given by
 
-\[
+\[ 
 f(x) = \begin{cases}
-k\cos^2(x) + k & 0 \leq x \leq \frac{\pi}{2} \\
-0 & \text{elsewhere}
-\end{cases}
-\]
+ k\cos^2(x) + k & 0 \leq x \leq \frac{\pi}{2} \\
+ 0 & \text{elsewhere}
+\end{cases} \]
 
 where $k \geq 0$.
 
@@ -44,12 +46,10 @@ where $k \geq 0$.
 
 Another random variable $Y$ has probability density function given by
 
-\[
-g(x) = \begin{cases}
-a\cos^2(x) + c & 0 \leq x \leq \frac{\pi}{2} \\
-0 & \text{elsewhere}
-\end{cases}
-\]
+\[ g(x) = \begin{cases}
+ a\cos^2(x) + c & 0 \leq x \leq \frac{\pi}{2} \\
+ 0 & \text{elsewhere}
+\end{cases} \]
 
 where $a \geq 0$.
 
@@ -66,10 +66,10 @@ Find the maximum value of $a$.
 If $\cos(a) = b$, where $b < 0$ and $\frac{\pi}{2} < a < \pi$, then the sum of the solutions to $\cos(3x) = b$, where $0 < x < \pi$, is
 
 \begin{enumerate}
-    \item[A.] $a$
-    \item[B.] $\frac{3a + 2\pi}{3}$
-    \item[C.] $a + 2\pi$
-    \item[D.] $\frac{2(a + \pi)}{3}$
+ \item[A.] $a$
+ \item[B.] $\frac{3a + 2\pi}{3}$
+ \item[C.] $a + 2\pi$
+ \item[D.] $\frac{2(a + \pi)}{3}$
 \end{enumerate}
 
 \vspace{5\baselineskip}
@@ -84,12 +84,10 @@ The strength of a signal is modelled by $f(t) = 5 - 3\sin\left(\frac{\pi t}{8}\r
 
 \textbf{(g)} For two distinct times $t_1, t_2 \in (0, 16)$, an observer notes that $f'(t_1) = -f'(t_2)$. $t_2$ can be expressed as
 
-\[
-t_2 = \begin{cases}
-c_1 - t_1 & 0 < t_1 < 8 \text{ and } 0 < t_2 < 8 \\
-c_2 - t_1 & 8 < t_1 < 16 \text{ and } 8 < t_2 < 16
-\end{cases}
-\]
+\[ t_2 = \begin{cases}
+ c_1 - t_1 & 0 < t_1 < 8 \text{ and } 0 < t_2 < 8 \\
+ c_2 - t_1 & 8 < t_1 < 16 \text{ and } 8 < t_2 < 16
+\end{cases} \]
 
 Find the values of $c_1$ and $c_2$.
 
@@ -103,12 +101,10 @@ Find the values of $c_1$ and $c_2$.
 
 The durations (in seconds) for which ads are viewed on a YouTube channel follow the probability density function:
 
-\[
-f(x) = \begin{cases}
-\frac{16}{15(x-5)^2} & 6 \leq x \leq 21 \\
-0 & \text{elsewhere}
-\end{cases}
-\]
+\[ f(x) = \begin{cases}
+ \frac{16}{15(x-5)^2} & 6 \leq x \leq 21 \\
+ 0 & \text{elsewhere}
+\end{cases} \]
 
 \textbf{(a)} Find the probability that an ad is viewed for more than 10 seconds.
 
@@ -116,12 +112,10 @@ f(x) = \begin{cases}
 
 \textbf{(c)} Another probability distribution function is given by
 
-\[
-g(x) = \begin{cases}
-af(x) - b & 6 \leq x \leq 21 \\
-0 & \text{elsewhere}
-\end{cases}
-\]
+\[ g(x) = \begin{cases}
+ af(x) - b & 6 \leq x \leq 21 \\
+ 0 & \text{elsewhere}
+\end{cases} \]
 
 where $a, b > 0$. Find the maximum value of $b$ and the corresponding value of $a$.
 
@@ -150,10 +144,10 @@ $h : [0,\infty) \to \mathbb{R}$, $h(x) = a\cos(x)$, where $a \neq 0$.
 A 99\% confidence interval for a population proportion is equal to $(a,b)$, then a 95\% confidence interval for the population proportion is closest to
 
 \begin{enumerate}
-    \item[A.] $(0.88a + 0.12b, 0.12a + 0.88b)$
-    \item[B.] $(0.88a - 0.12b, 0.12a + 0.88b)$
-    \item[C.] $(1.31a, 1.31b)$
-    \item[D.] $(0.76a, 0.76b)$
+ \item[A.] $(0.88a + 0.12b, 0.12a + 0.88b)$
+ \item[B.] $(0.88a - 0.12b, 0.12a + 0.88b)$
+ \item[C.] $(1.31a, 1.31b)$
+ \item[D.] $(0.76a, 0.76b)$
 \end{enumerate}
 
 \vspace{5\baselineskip}
@@ -173,26 +167,26 @@ Several students were considering the following simultaneous equations
 
 Allan stated that the general solution could be expressed as
 \[
-x = k, \quad y = 2k - 3, \quad z = k - 5 \quad \text{for } k \in R.
+ x = k, \quad y = 2k - 3, \quad z = k - 5 \quad \text{for } k \in R.
 \]
 
 Ben stated that the general solution could be expressed as
 \[
-x = \frac{k+3}{2}, \quad y = k, \quad z = \frac{k-7}{2} \quad \text{for } k \in R.
+ x = \frac{k+3}{2}, \quad y = k, \quad z = \frac{k-7}{2} \quad \text{for } k \in R.
 \]
 
 Colin stated that the general solution could be expressed as
 \[
-x = k + 5, \quad y = 2k + 7, \quad z = k \quad \text{for } k \in R.
+ x = k + 5, \quad y = 2k + 7, \quad z = k \quad \text{for } k \in R.
 \]
 
 Then
 
 \begin{enumerate}
-    \item[A.] Only Allan is correct.
-    \item[B.] Only Ben is correct
-    \item[C.] Only Colin is correct
-    \item[D.] All of Allan, Ben and Colin are correct.
+ \item[A.] Only Allan is correct.
+ \item[B.] Only Ben is correct
+ \item[C.] Only Colin is correct
+ \item[D.] All of Allan, Ben and Colin are correct.
 \end{enumerate}
 
 \vspace{5\baselineskip}
@@ -210,10 +204,10 @@ Newton's method can sometimes fail to find the root of the equation $f(x) = 0$.
 All of the functions below have a root close to $x = 1$, with a starting value of $x_0 = 2$. Newton's method will succeed for which one of the following functions?
 
 \begin{enumerate}
-    \item[A.] $f(x) = \sqrt{3x^2 - 7x + 2}$
-    \item[B.] $f(x) = 3x^3 - 13x^2 + 16x - 4$
-    \item[C.] $f(x) = (3x - 1)\log_e(x - 2)$
-    \item[D.] $f(x) = (3x - 1)e^{x-2}$
+ \item[A.] $f(x) = \sqrt{3x^2 - 7x + 2}$
+ \item[B.] $f(x) = 3x^3 - 13x^2 + 16x - 4$
+ \item[C.] $f(x) = (3x - 1)\log_e(x - 2)$
+ \item[D.] $f(x) = (3x - 1)e^{x-2}$
 \end{enumerate}
 
 \vspace{5\baselineskip}
@@ -239,7 +233,7 @@ have an infinite number of solutions.
 
 \textbf{Question b} \hfill 3 marks
 
-Consider the functions $f : [0,2\pi] \to R$, $f(x) = 2\sin^2(2x)$ and $g : [0,2\pi] \to R$, $g(x) = 1 - \cos(2x)$, on the axes below, sketch the graphs of the functions $y = f(x)$ and $y = g(x)$ and determine $2\sin^2(2x) < 1 - \cos(2x)$ for $x \in [0,2\pi]$
+Consider the functions $f : [0,2\pi] \to R$, $f(x) = 2\sin^2(2x)$ and $g : [0,2\pi] \to R$, $g(x) = 1 - \cos(2x)$, on the axes below, sketch the graphs of the functions $y = f(x)$ and $y = g(x)$ [...]  
 
 \vspace{5\baselineskip}
 
@@ -269,7 +263,7 @@ Consider line $l_1$ with equation $y = 2x - 3$ and line $l_2$ that is perpendicu
 
 The graph of $f : \left[0, \frac{\pi}{2}\right] \to \mathbb{R}$, $f(x) = \sqrt{\sin(2x)}$ is shown below.
 
-On the same set of axes, sketch the graph of the derivative function $f'$. Label any asymptotes with their equations and any intercepts with their coordinates. You do not need to label any point of intersection.
+On the same set of axes, sketch the graph of the derivative function $f'$. Label any asymptotes with their equations and any intercepts with their coordinates. You do not need to label any point [...]  
 
 \vspace{5\baselineskip}
 
@@ -293,12 +287,10 @@ Let $g : [150,210] \to \mathbb{R}$, $g(x) = \frac{\pi}{120}\sin\left(\frac{\pi}{
 
 In a farm, the masses of apples in grams are represented by a random variable $X$ with the probability density function
 
-\[
-f(x) = \begin{cases}
-g(x) & 150 \leq x \leq 210\\
-0 & \text{elsewhere}
-\end{cases}
-\]
+\[ f(x) = \begin{cases}
+ g(x) & 150 \leq x \leq 210\\
+ 0 & \text{elsewhere}
+\end{cases} \]
 
 \textbf{(i)} If $\text{Pr}(b - c < X < b + c) = 0.9$, where $b - c \geq 150$ and $b + c \leq 210$, find the possible values of $b$, correct to one decimal place.
 
@@ -312,22 +304,77 @@ g(x) & 150 \leq x \leq 210\\
 
 In a cattle ranch, an agriculturist monitors two identical cows, A and B, over 20 months to study the effects of food deprivation. Cow A receives a normal diet throughout, while Cow B is placed on a restricted diet for the first 10 months and then resumes a normal diet. The weight gains of the cows over time are plotted below. Both cows have gained 400 kg after 20 months.
 
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ width=12cm,
+ height=8cm,
+ xlabel={$t$ (months)},
+ ylabel={$y$ (kg)},
+ xmin=0, xmax=20,
+ ymin=0, ymax=450,
+ xtick={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20},
+ ytick={0,50,100,150,200,250,300,350,400,450},
+ grid=both,
+ grid style={line width=.1pt, draw=gray!30},
+ major grid style={line width=.2pt,draw=gray!50},
+ axis lines=middle,
+ enlargelimits={abs=0.5},
+]
+
+% Curve A(t)
+\addplot[
+ domain=0:20,
+ samples=100,
+ smooth,
+ thick,
+ black,
+] {400 - 400/(x+1)};
+\node at (axis cs:8,420) {$A(t)$};
+\node[circle,fill,inner sep=1.5pt] at (axis cs:20,400) {};
+\node[above right] at (axis cs:20,400) {$(20,400)$};
+
+% Curve B(t) - first part (0 to 10)
+\addplot[
+ domain=0:10,
+ samples=100,
+ smooth,
+ thick,
+ black,
+] {200 - 200/(0.5*x+1)};
+
+% Curve B(t) - second part (10 to 20)
+\addplot[
+ domain=10:20,
+ samples=100,
+ smooth,
+ thick,
+ black,
+] {200 + 200 - 200/(0.5*(x-10)+1)};
+\node at (axis cs:6,180) {$B(t)$};
+\node[circle,fill,inner sep=1.5pt] at (axis cs:10,200) {};
+\node[above right] at (axis cs:10,200) {$(10,200)$};
+
+% Origin point
+\node[circle,fill,inner sep=1.5pt] at (axis cs:0,0) {};
+\node[below left] at (axis cs:0,0) {$(0,0)$};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
 Cow A's weight gain, $A(t)$ in kg after $t$ months is modelled by
 
-\[
-A : [0,20] \to \mathbb{R}, \quad A(t) = p - \frac{p}{t + q}
-\]
+\[ A : [0,20] \to \mathbb{R}, \quad A(t) = p - \frac{p}{t + q} \]
 
 where $p$ and $q$ are positive constants.
 
 Cow B's weight gain, $B(t)$ in kg after $t$ months is modelled by
 
-\[
-B(t) = \begin{cases}
-B_1(t) & 0 \leq t \leq 10\\
-B_2(t) & 10 < t \leq 20
-\end{cases}
-\]
+\[ B(t) = \begin{cases}
+ B_1(t) & 0 \leq t \leq 10\\
+ B_2(t) & 10 < t \leq 20
+\end{cases} \]
 
 where $B_1(t)$ and $B_2(t)$ are linear transformations of the graph of $A(t)$. The graphs of $B_1(t)$ and $B_2(t)$ are joined at the point $(10,200)$.
 
@@ -344,10 +391,10 @@ where $B_1(t)$ and $B_2(t)$ are linear transformations of the graph of $A(t)$. T
 A fair six-sided die is rolled until a '6' appears, and the number of rolls is noted. The probability that a '6' appears in at most $n$ rolls is
 
 \begin{enumerate}
-    \item[A.] $\left(\frac{5}{6}\right)^n$
-    \item[B.] $1 - \left(\frac{5}{6}\right)^n$
-    \item[C.] $\frac{1}{6}\left(\frac{5}{6}\right)^n$
-    \item[D.] $1 - \frac{1}{6}\left(\frac{5}{6}\right)^n$
+ \item[A.] $\left(\frac{5}{6}\right)^n$
+ \item[B.] $1 - \left(\frac{5}{6}\right)^n$
+ \item[C.] $\frac{1}{6}\left(\frac{5}{6}\right)^n$
+ \item[D.] $1 - \frac{1}{6}\left(\frac{5}{6}\right)^n$
 \end{enumerate}
 
 \vspace{5\baselineskip}
@@ -358,18 +405,20 @@ A fair six-sided die is rolled until a '6' appears, and the number of rolls is n
 
 \textbf{Question 12} \hfill 1 mark
 
-A pharmaceutical company is running two independent clinical trials -- one in Sydney and another in Melbourne. Let $S$ be the event that the Sydney trial is successful and $M$ be the event that the Melbourne trial is successful. Suppose that $P(S) = 0.7$ and $P(M) = 0.6$.
+A pharmaceutical company is running two independent clinical trials -- one in Sydney and another in Melbourne. Let $S$ be the event that the Sydney trial is successful and $M$ be the event that the Melbourne trial is successful.
 
 Given that at least one of the two trials is successful, what is the probability that only the Melbourne trial is successful, correct to four decimal places?
 
 \begin{enumerate}
-    \item[A.] 0.1080
-    \item[B.] 0.2045
-    \item[C.] 0.3061
-    \item[D.] 0.4286
+ \item[A.] 0.1080
+ \item[B.] 0.2045
+ \item[C.] 0.3061
+ \item[D.] 0.4286
 \end{enumerate}
 
 \vspace{5\baselineskip}
+
+\hrulefill
 
 \section*{Question 19 [TF]}
 
@@ -401,14 +450,12 @@ If the $x$-coordinates of the points of intersection of $y = f_1(x)$ and $y = f_
 
 \textbf{Question 8}
 
-\textbf{(d)} Let $W$ be a random variable representing the density (in tonnes per cubic metre) of concrete cylinders manufactured by a construction company. Suppose its probability density function can be modelled as
+\textbf{(d)} Let $W$ be a random variable representing the density (in tonnes per cubic metre) of concrete cylinders manufactured by a construction company. Suppose its probability density function is given by
 
-\[
-w(x) = \begin{cases}
--kx^2 + \left(\frac{38k + 6}{15}\right)x & 2 \leq x \leq 3\\
-0 & \text{elsewhere}
-\end{cases}
-\]
+\[ w(x) = \begin{cases}
+ -kx^2 + \left(\frac{38k + 6}{15}\right)x & 2 \leq x \leq 3\\
+ 0 & \text{elsewhere}
+\end{cases} \]
 
 If $\text{Pr}(W > 2.5) = 0.40$, find the values $k$ can take.
 
@@ -421,13 +468,15 @@ If $\text{Pr}(W > 2.5) = 0.40$, find the values $k$ can take.
 If $h'(x) = e^{-\frac{1}{4}}$ and $h(1) = 4$, the value of $h(2)$ is closest to
 
 \begin{enumerate}
-    \item[A.] 4.6533
-    \item[B.] 4.5048
-    \item[C.] 6.0201
-    \item[D.] 3.9224
+ \item[A.] 4.6533
+ \item[B.] 4.5048
+ \item[C.] 6.0201
+ \item[D.] 3.9224
 \end{enumerate}
 
 \vspace{5\baselineskip}
+
+\hrulefill
 
 \section*{Question 23 [TF]}
 
@@ -441,7 +490,7 @@ Find the real value(s) of $k$ for which the graph of $y = \tan(kx) - 1$ has exac
 
 \textbf{Question 3} \hfill 17 marks
 
-An athlete training for a triathlon is located at point $O(0,0)$ on the shore of a circular lake of diameter 4 kilometres. To reach the opposite point $Q(4,0)$, the athlete runs around the shore clockwise to point $P$ at a speed of 12 km/h, then swims the remaining distance, if any, to point Q at 6 km/h. Let $\theta = \angle OCP$, where $C$ is the centre of the circle.
+An athlete training for a triathlon is located at point $O(0,0)$ on the shore of a circular lake of diameter 4 kilometres. To reach the opposite point $Q(4,0)$, the athlete runs around the shore to point $P$ and then swims directly to $Q$.
 
 \textbf{(a)} Express the coordinates of $P$ in terms of $\theta$.
 
@@ -452,10 +501,9 @@ An athlete training for a triathlon is located at point $O(0,0)$ on the shore of
 
 Let $\theta = \frac{\pi}{2}$. The displacement of the athlete, $s(t)$ kilometres (distance relative to the starting point O) after $t$ hours can be expressed as
 
-\[
-s(t) = \begin{cases}
-s_1(t) & 0 \leq t \leq t_P\\
-s_2(t - t_P) & t_P < t \leq t_Q
+\[ s(t) = \begin{cases}
+ s_1(t) & 0 \leq t \leq t_P\\
+ s_2(t - t_P) & t_P < t \leq t_Q
 \end{cases}
 \]
 
@@ -471,10 +519,9 @@ Describe a sequence of two dilations and one translation to achieve the above tr
 
 The swimming speed, $X$ km/h, of male athletes in the triathlon follows the probability distribution
 
-\[
-f(x) = \begin{cases}
-\frac{a}{2}\sin(a(x - b)) & 5 \leq x \leq 9\\
-0 & \text{elsewhere}
+\[ f(x) = \begin{cases}
+ \frac{a}{2}\sin(a(x - b)) & 5 \leq x \leq 9\\
+ 0 & \text{elsewhere}
 \end{cases}
 \]
 

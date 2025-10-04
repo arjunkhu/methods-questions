@@ -744,4 +744,306 @@ Consider $f : (0,\infty) \to \mathbb{R}$, $f(x) = \frac{1}{x^2} - 1$.
 
 \vspace{9\baselineskip}
 
+\hrulefill
+
+\section*{Question 31 [TA]}
+
+\textbf{Part (d)}
+
+Let $g : \mathbb{R} \to \mathbb{R}$, $g(x) = (1-x)(x+2)$ and $h : \mathbb{R} \to \mathbb{R}$, $h(x) = x - 3k$, where $k < -1$. The graphs of $g$ and $h$ are shown below.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ width=10cm,
+ height=8cm,
+ xlabel={$x$},
+ ylabel={$y$},
+ xmin=-4, xmax=2,
+ ymin=-5, ymax=3,
+ axis lines=middle,
+ samples=100,
+]
+
+% Parabola g(x) = (1-x)(x+2)
+\addplot[thick, black, smooth, domain=-3:2] {(1-x)*(x+2)};
+\node at (axis cs:-1,2.5) {$g(x)$};
+
+% Line h(x) = x - 3k (assuming k = -1 for visualization)
+\addplot[thick, black, domain=-4:2] {x + 3};
+\node at (axis cs:-3,1) {$h(x)$};
+
+% Point labels
+\node[circle,fill,inner sep=1.5pt] at (axis cs:0,-3) {};
+\node at (axis cs:0,-3) [below right] {$(0,-3k)$};
+\node[circle,fill,inner sep=1.5pt] at (axis cs:-2,0) {};
+\node at (axis cs:-2,0) [above left] {$(-2,0)$};
+\node[circle,fill,inner sep=1.5pt] at (axis cs:3,0) {};
+\node at (axis cs:3,0) [above right] {$(3k,0)$};
+
+% Shaded region
+\addplot[fill=gray!40, domain=-2:0, opacity=0.5] {(1-x)*(x+2)} \closedcycle;
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+In the figure, let $A_1$ be the area bounded by the graphs of $g$, $h$ and the coordinate axes in the second quadrant.
+
+\textbf{i.} Find $A_1$ in terms of $k$. \hfill [2 marks]
+
+\vspace{9\baselineskip}
+
+\textbf{iii.} If the shortest distance between a point on $g$ and $h$ is 1 unit, find the value of $k$. \hfill [3 marks]
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 32 [TA]}
+
+\textbf{Part (d)}
+
+Let $l$ be the line with equation $y = -\frac{4x}{3}$ and $l_p$ be the line tangent to $f$ at $x = p$.
+
+\textbf{i.} Find one of the two possible equations of $l_p$ if it is perpendicular to $l$. Give your answer in the form $y = mx + b$, where $m$ and $b$ are correct to two decimal places. \hfill [2 marks]
+
+\vspace{9\baselineskip}
+
+\textbf{ii.} As $p \to 2$, the acute angle between $l$ and $l_p$ approaches $\theta$. Find $\tan(\theta)$.
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 33 [TA]}
+
+\textbf{Question 5} \hfill 13 marks
+
+Consider the function $f : \mathbb{R} \to \mathbb{R}$, $f(x) = \cos(x^2 + 4x + 4)$. The graph of $f$ is shown below.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ width=12cm,
+ height=6cm,
+ xlabel={$x$},
+ ylabel={$y$},
+ xmin=-8, xmax=4,
+ ymin=-2.4, ymax=2.4,
+ axis lines=middle,
+ samples=200,
+ ytick={-2,-1.6,-1.2,-0.8,-0.4,0,0.4,0.8,1.2,1.6,2},
+]
+
+% Plot f(x) = cos(x^2 + 4x + 4)
+\addplot[thick, black, smooth, domain=-8:4] {cos(deg((x+2)^2))};
+\node at (axis cs:2,1.5) {$f(x)$};
+
+% Mark axis of symmetry
+\addplot[dashed, gray] coordinates {(-2,-2.4) (-2,2.4)};
+\node at (axis cs:-2,-2.2) [below] {$x = -2$};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\textbf{(a)} State the equation of the axis of symmetry of $f$. \hfill [1 mark]
+
+\vspace{9\baselineskip}
+
+\textbf{(b)} The graph of $f$ is mapped onto the graph of $y = \cos(x^2 + 2ax + a)$, where $a \in \mathbb{R}$, by a translation of $k$ units in the positive $x$-direction. Find the value(s) of $k$. \hfill [2 marks]
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 34 [TF]}
+
+\textbf{Part (e)} \hfill 1 mark
+
+Consider the function $g : [m,n] \to \mathbb{R}$, $g(x) = e^{\cos(x)} - 2$, where $m, n \in \mathbb{Z}$ and $m < n$.
+
+As $m$ ranges over its domain, what is the maximum number of integers $n$ for which $g$ has an inverse?
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 35 [TA]}
+
+\textbf{Part (f)}
+
+Let $g : \mathbb{R} \to \mathbb{R}$, $g(x) = x^4 - 4x^3 + 2x^2(a-3) + 4x(a+1)$, where $a \in \mathbb{R}$.
+
+Find all solutions to $g'(x) = 0$. Express your answer in terms of $a$.
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 36 [TA]}
+
+\textbf{Part (iii)}
+
+Find the values of $a$ for which the graph of $g$ has an absolute minimum in the fourth quadrant.
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 37 [TA]}
+
+Let $h : [0,\infty) \to \mathbb{R}$, $h(x) = \frac{x^3 + k^2x}{20}$, where $k \geq 0$.
+
+The graphs of $h$ and its inverse function $h^{-1}$ have a bounded area between them.
+
+\textbf{(d)} Find the set of values of $k$ for which the graphs of $h$ and its inverse function $h^{-1}$ have a bounded area. \hfill [1 mark]
+
+\vspace{9\baselineskip}
+
+\textbf{(e)} Find the maximum area bounded by the graphs of $h$ and $h^{-1}$. \hfill [2 marks]
+
+\vspace{9\baselineskip}
+
+\textbf{(f)} Find the value of $k$ for which the line $y = 2 - x$ bisects the area bounded by the graphs of $h$ and $h^{-1}$. Give your answer correct to three decimal places. \hfill [3 marks]
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 38 [TF]}
+
+\textbf{Question 8} \hfill 7 marks
+
+Let $f : \mathbb{R} \to \mathbb{R}$, $f(x) = \log_e(x-k)$, where $k \in \mathbb{R}^+$, and $f^{-1}$ be the inverse function of $f$. The graphs of $y = f(x)$ and $y = f^{-1}(x)$ are shown below.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ width=10cm,
+ height=8cm,
+ xlabel={$x$},
+ ylabel={$y$},
+ xmin=-1, xmax=6,
+ ymin=-1, ymax=6,
+ axis lines=middle,
+ samples=100,
+]
+
+% Plot f(x) = ln(x-k) where k is shown as vertical asymptote
+\addplot[thick, black, smooth, domain=1.1:6] {ln(x-1)};
+\node at (axis cs:4,2) {$f(x)$};
+
+% Plot f^{-1}(x) = e^x + k
+\addplot[thick, black, smooth, domain=-1:2] {exp(x)+1};
+\node at (axis cs:2,4) {$f^{-1}(x)$};
+
+% Vertical asymptote x = k
+\addplot[dashed, gray] coordinates {(1,-1) (1,6)};
+\node at (axis cs:1,5.5) [right] {$x = k$};
+
+% Points A, B, C
+\node[circle,fill,inner sep=1.5pt, label=below left:$A$] at (axis cs:2,0) {};
+\node[circle,fill,inner sep=1.5pt, label=left:$B$] at (axis cs:1,1) {};
+\node[circle,fill,inner sep=1.5pt, label=above:$C$] at (axis cs:3,1) {};
+
+% Line y = x
+\addplot[dashed, gray] {x};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+Point $A$ is the $x$-intercept of $f$ and point $B$ is the $y$-intercept of $f^{-1}$. The horizontal line through $B$ intersects the graph of $f$ at point $C$.
+
+\textbf{(c)} The area of the region bounded by the $x$-axis, the line $x = k$, the horizontal line through point $B$, and the graph of $f$ is 2 square units. Find the value of $k$. Express your answer in the form $\log_e(a) + b$, where $a, b \in \mathbb{Z}$. \hfill [2 marks]
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 39 [TA]}
+
+\textbf{Question 13} \hfill 1 mark
+
+For a sample proportion $p$, what is the effect on the width of the 95\% confidence interval if the sample size is increased by a factor of 3?
+
+\begin{enumerate}
+    \item[A.] Increase by 73.2\%
+    \item[B.] Decrease by 66.7\%
+    \item[C.] Decrease by 33.3\%
+    \item[D.] Decrease by 57.7\%
+    \item[E.] Decrease by 42.3\%.
+\end{enumerate}
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 40 [TA]}
+
+\textbf{Part (d)} \hfill 3 marks
+
+The weights of patients who take the drug are normally distributed with an interquartile range of 8 kilograms.
+
+Find the standard deviation of the weights of patients. Give your answer in kilograms, correct to two decimal places.
+
+Note: The interquartile range is defined as the difference between the 75th percentile and 25th percentile.
+
+\vspace{9\baselineskip}
+
+\hrulefill
+
+\section*{Question 41 [TA]}
+
+\textbf{Question 3} \hfill 11 marks
+
+A river valley is modelled by the function $h : [0,12] \to \mathbb{R}$, $h(x) = 3\sin\left(\frac{\pi x}{4}\right) - \cos\left(\frac{\pi x}{2}\right) + 1$, where $h(x)$ decametres is the height of a point above the river surface ($y = 0$).
+
+In the figure below, sections $AC$ and $DB$ represent the hills on the valley and $CD$ represents the river.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ width=12cm,
+ height=6cm,
+ xlabel={$x$},
+ ylabel={$y$},
+ xmin=0, xmax=12,
+ ymin=-1, ymax=5,
+ axis lines=middle,
+ samples=200,
+]
+
+% Plot h(x) = 3sin(πx/4) - cos(πx/2) + 1
+\addplot[thick, black, smooth, domain=0:12] {3*sin(deg(pi*x/4)) - cos(deg(pi*x/2)) + 1};
+\node at (axis cs:3,4) {$h(x)$};
+
+% Mark points A, C, D, B
+\node at (axis cs:0,0) [below left] {$A$};
+\node at (axis cs:4,0.5) [above] {$C$};
+\node at (axis cs:8,0.5) [above] {$D$};
+\node at (axis cs:12,0) [below right] {$B$};
+
+% Shaded region for sediment
+\addplot[fill=gray!40, domain=4:8] {3*sin(deg(pi*x/4)) - cos(deg(pi*x/2)) + 1} \closedcycle;
+\node at (axis cs:6,0.3) {Sediment};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+Note: 1 decametre (dam) is equal to 10 metres.
+
+\textbf{(g)} Sediment deposits formed at the bottom of the river, with the top layer modelled as a horizontal line in the figure. If the area of the shaded region is 0.75 square decametres, find the depth of the top layer of sediment from the surface of the water, in decametres. Give your answer correct to two decimal places. \hfill [3 marks]
+
+\vspace{9\baselineskip}
+
+\textbf{(h)} The rate of increase of sediment height was monitored for five years. After the third year of monitoring, the increase in sediment height was found to be 5 millimetres, and after 5 years the total increase in height (from the start of monitoring) was 7.5 millimetres.
+
+If the rate of increase in height can be modelled by the function $r(t) = ae^{-bt}$, where $r(t)$ millimetres per year is the rate of increase in height $t$ years after the start of monitoring and $a, b \in \mathbb{R}^+$, find the values of $a$ and $b$. Give your answer correct to four decimal places. \hfill [2 marks]
+
+\vspace{9\baselineskip}
+
 \end{document}
